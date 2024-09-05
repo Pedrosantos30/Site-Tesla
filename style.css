@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-snap-type: y mandatory ;
+}
+
+video, .img-tesla{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;   /* Deixa por cima cobrindo toda tela */
+    filter: brightness(60%); /* É um filtro que diminui o brilho */
+}
+.logo{
+    filter: brightness(100);
+    position: fixed;
+    width: 120px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+.sub{
+    color: white;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+
+}
+
+.info-carro{
+    margin-top: 80px;
+    text-align: center;
+
+}
+
+.rodape{
+  
+    text-align: center;
+
+}
+
+button{
+    background-color: rgb(34, 34, 34, 0.8);
+    color: white;
+    padding: 7px 80px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.drive{
+    color: black;
+    background: white;
+}
+.texto-rodape{
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formulario{
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -100%;
+    transition: 1.5s;
+}
